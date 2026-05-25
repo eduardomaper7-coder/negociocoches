@@ -17,6 +17,9 @@ import VolkswagenGolf from './pages/coches/VolkswagenGolf'
 import PorQueMarca from './components/PorQueMarca'
 
 import CodigoDescuento from './pages/CodigoDescuento'
+import BlogCoches from './components/BlogCoches'
+
+import TestimoniosCoches from './components/TestimoniosCoches'
 
 const Home = () => (
   <>
@@ -27,6 +30,8 @@ const Home = () => (
 
     <CochesVenta />
     <PorQueMarca />
+    <TestimoniosCoches />
+    <BlogCoches />
     <Footer />
   </>
 )
