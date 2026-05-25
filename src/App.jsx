@@ -1,20 +1,20 @@
 import { Routes, Route } from 'react-router-dom'
 
 import ScrollToTop from './components/ScrollToTop'
-
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Treatments from './components/Treatments'
-import WhyUs from './components/WhyUs'
-import FeaturedBox from './components/FeaturedBox'
-import HowWeWork from './components/HowWeWork'
-import Testimonials from './components/Testimonials'
-import BlogSection from './components/BlogSection'
-import Location from './components/Location'
-import ContactSection from './components/ContactSection'
+import CochesVenta from './components/CochesVenta'
 import Footer from './components/Footer'
-import AllTreatments from './components/AllTreatments'
 import Legal from './pages/Legal'
+
+import Peugeot308 from './pages/coches/Peugeot308'
+import BmwX6 from './pages/coches/BmwX6'
+import SeatAteca from './pages/coches/SeatAteca'
+import AudiA3 from './pages/coches/AudiA3'
+import MercedesClaseA from './pages/coches/MercedesClaseA'
+import VolkswagenGolf from './pages/coches/VolkswagenGolf'
+
+import PorQueMarca from './components/PorQueMarca'
 
 const Home = () => (
   <>
@@ -23,14 +23,8 @@ const Home = () => (
       <Hero />
     </div>
 
-    <Treatments />
-    <WhyUs />
-    <FeaturedBox />
-    <HowWeWork />
-    <Testimonials />
-    <BlogSection />
-    <Location />
-    <ContactSection />
+    <CochesVenta />
+    <PorQueMarca />
     <Footer />
   </>
 )
@@ -38,23 +32,17 @@ const Home = () => (
 function App() {
   return (
     <main className="bg-white text-black">
-
-      {/* 🔥 ESTO ES LO IMPORTANTE */}
       <ScrollToTop />
 
       <Routes>
         <Route path="/" element={<Home />} />
 
-        <Route
-          path="/tratamientos"
-          element={
-            <>
-              <Navbar />
-              <AllTreatments />
-              <Footer />
-            </>
-          }
-        />
+        <Route path="/coches/peugeot-308" element={<Peugeot308 />} />
+        <Route path="/coches/bmw-x6" element={<BmwX6 />} />
+        <Route path="/coches/seat-ateca" element={<SeatAteca />} />
+        <Route path="/coches/audi-a3" element={<AudiA3 />} />
+        <Route path="/coches/mercedes-clase-a" element={<MercedesClaseA />} />
+        <Route path="/coches/volkswagen-golf" element={<VolkswagenGolf />} />
 
         <Route
           path="/legal"
