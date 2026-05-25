@@ -16,6 +16,8 @@ import VolkswagenGolf from './pages/coches/VolkswagenGolf'
 
 import PorQueMarca from './components/PorQueMarca'
 
+import CodigoDescuento from './pages/CodigoDescuento'
+
 const Home = () => (
   <>
     <div className="relative">
@@ -43,6 +45,7 @@ function App() {
         <Route path="/coches/audi-a3" element={<AudiA3 />} />
         <Route path="/coches/mercedes-clase-a" element={<MercedesClaseA />} />
         <Route path="/coches/volkswagen-golf" element={<VolkswagenGolf />} />
+        <Route path="/codigo-descuento" element={<CodigoDescuento />} />
 
         <Route
           path="/legal"

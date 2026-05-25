@@ -37,7 +37,16 @@ const Navbar = () => {
           >
             Contacto
           </a>
+
+          <a
+  href="/codigo-descuento"
+  className="text-sm font-medium text-slate-700 transition hover:text-slate-950"
+>
+  Código Descuento
+</a>
         </nav>
+
+        
 
         {/* Botón */}
         <a
@@ -46,6 +55,8 @@ const Navbar = () => {
 >
   Llamar ahora
 </a>
+
+
       </div>
     </header>
   )
